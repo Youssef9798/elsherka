@@ -72,27 +72,3 @@ $(document).ready(function() {
 		});
 });
 
-function runTotal(){
-    var total = 0.00;
-    var addTop = 20.00;
-    
-    for (var i = 0; i <= 31; i++){
-        if (document.forms[1].mark[i].checked == true){
-            total += addTop;
-        }
-    }
-    totalDec = total.toFixed(2);
-    document.f1.Total.value = totalDec + ' EGP';
-}
-
-function runTotal2(){
-    var total2 = 0.00;
-    var addTop2 = 20.00;
-    for (var i = 0; i <= 31; i++){
-        if (document.forms[2].mark2[i].checked == true){
-            total2 += addTop2;
-        }
-    }
-    totalDec2 = total2.toFixed(2);
-    document.f2.Total2.value = totalDec2 + ' EGP';
-}
