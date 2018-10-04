@@ -15,7 +15,7 @@
         
         <div id="home-loading" class="home-loading"> <!--- loading page ------>
             <div class="center">
-                <div class="heart">`
+                <div class="heart">
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
                             <h1 class="english">Drugs &amp; Medicines</h1>
                             <h1 class="arabic">الادوية  &amp; المسكنات</h1>
                             <ul id="menu">
-                                <li class="english"><a data-page="type1" href="#">Type 1</a></li>
+                                <li class="english"><a data-page="1" href="#">Type 1</a></li>
                                 <li class="arabic"><a data-page="type1" href="#">النوع 1</a></li>
                                 <li class="english"><a data-page="type2" href="#">Type 2</a></li>
                                 <li class="arabic"><a data-page="type2" href="#">النوع 2</a></li>
@@ -165,20 +165,21 @@
                             
                             
                             <div id="category-type1"> <!-- dynamic id for cateories type -->
-                        <div class="type1 page " id="type1"  data-page="type1" ><!-- dynamic id responuble for design category no.1-->
+                        <div class="type1 page " id="type1"  data-page="1" ><!-- dynamic id responuble for design category no.1-->
                             <div class="grid-item"> <!-- static class reponsible for design all drugs -->
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
+                                    <div class="add-to-cart">
+                                            <p id="price">20.00$</p>
+                                            <button class="carting">Add to cart</button>
+                                    </div>
                                     <div class="overlay overlayFade">
-                                        <p class="pop-link"><a class="drug-popup english" id="drug-name-en" data-popup-open="popup-1" href="#">ِantinal</a></p> <!-- id=drug-name-en dynamic id text for only first drug not in all drugs-->
+                                        <p class="pop-link"><a class="drug-popup english" id="drug-name-en" data-popup-open="popup-1" href="#">ِL'Oreal Paris Advanced Haircare</a></p> <!-- id=drug-name-en dynamic id text for only first drug not in all drugs-->
                                         <p class="pop-link"><a class="drug-popup arabic" id="drug name-ar" data-popup-open="popup-1" href="#" style="margin-left: 50px;">الاسم</a></p>
                                        
-                                        <p id="price">20.00$</p> <!--- dynamic id -->
+                                        
                                     </div>
                                     
-                                        <input type="checkbox" name="mark" value="cure1" onclick="runTotal();" />
-                                    
-
                                             <div class="popup" data-popup="popup-1"> <!--- static class -->
                                                 <div class="popup-inner2">  <!--- static class -->
                                                     <div class="popup-inner">  <!--- static class -->
@@ -266,6 +267,10 @@
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
+                                    <div class="add-to-cart">
+                                            <p id="price">20.00$</p>
+                                            <button class="carting">Add to cart</button>
+                                    </div>
                                     <div class="overlay overlayFade">
                                         <p class="pop-link"><a class="drug-popup english" data-popup-open="popup-3" href="#">NAME</a></p>
                                         <p class="pop-link"><a class="drug-popup arabic" data-popup-open="popup-3" href="#" style="margin-left: 50px;">الاسم</a></p>
@@ -274,7 +279,7 @@
                                     </div>
                                 
                                 
-                                    <input type="checkbox" name="mark" value="cure1" onclick="runTotal();" />
+                                
                                  
                                  
                                             <div class="popup" data-popup="popup-3">
@@ -1796,11 +1801,15 @@
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
+                                    <div class="add-to-cart">
+                                            <p id="price">20.00$</p>
+                                            <button class="carting">Add to cart</button>
+                                    </div>
                                     <div class="overlay overlayFade">
                                         <p class="pop-link"><a class="drug-popup english" data-popup-open="popup-34" href="#">L'Oreal Paris Advanced Haircare</a></p>
                                         <p class="pop-link"><a class="drug-popup arabic" data-popup-open="popup-34" href="#" style="margin-left: 50px;">الاسم</a></p>
                                        
-                                        <p id="price">Price $</p>
+                                        
                                     </div>
                                     
                                         <input type="checkbox" name="mark2" value="cure1" onclick="runTotal2();" />
