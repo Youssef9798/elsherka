@@ -148,14 +148,19 @@
                             <h1 class="english">Drugs &amp; Medicines</h1>
                             <h1 class="arabic">الادوية  &amp; المسكنات</h1>
                             <ul id="menu">
-                                <li class="english"><a data-page="1" href="#">Type 1</a></li>
-                                <li class="arabic"><a data-page="type1" href="#">النوع 1</a></li>
-                                <li class="english"><a data-page="type2" href="#">Type 2</a></li>
-                                <li class="arabic"><a data-page="type2" href="#">النوع 2</a></li>
-                                <li class="english"><a data-page="type3" href="#">Type 3</a></li>
-                                <li class="arabic"><a data-page="type3" href="#">النوع 3</a></li>
-                                <li class="english"><a data-page="type4" href="#">Type 4</a></li>
-                                <li class="arabic"><a data-page="type4" href="#">النوع 4</a></li>
+                                
+                                <li class="english"><a id="type1" href="#">Type 1</a></li>
+                                <li class="arabic"><a id="type1" href="#">النوع 1</a></li>
+                                
+                                
+                                <li class="english"><a id="type2" href="#">Type 2</a></li>
+                                <li class="arabic"><a id="type2" href="#">النوع 2</a></li>
+                                
+                                <li class="english"><a id="type3" href="#">Type 3</a></li>
+                                <li class="arabic"><a id="type3" href="#">النوع 3</a></li>
+                                
+                                <li class="english"><a id="type4" href="#">Type 4</a></li>
+                                <li class="arabic"><a id="type4" href="#">النوع 4</a></li>
                                 
                           <a href="cart.html" class=" cart fas fa-cart-plus" ></a> <!-- Cart link and must put it in cosmetics too ---> 
                             </ul>
@@ -165,7 +170,7 @@
                             
                             
                             <div id="category-type1"> <!-- dynamic id for cateories type -->
-                        <div class="type1 page " id="type1"  data-page="1" ><!-- dynamic id responuble for design category no.1-->
+                        <div class="type1 page " id="type1"  ><!-- dynamic id responuble for design category no.1-->
                             <div class="grid-item"> <!-- static class reponsible for design all drugs -->
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
@@ -194,21 +199,14 @@
                                                         </div>
                                                         <div class="drug-bottom">
                                                             <div class="grid-item4">
-                                                                <p class="english">Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p> <!--- all popups text width 60% -->
+                                                                <p class="english">Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam........</p>
+                                                                <a href="durg.html" class="more">Read more</a><!--- all popups text width 60% -->
                                                                 <p class="arabic">بالعربي.</p>
                                                             </div>
                                                             <div class="grid-item5">
                                                                 <img src="imgs/product1.jpg"> <!-- all popup imgs width 40% -->
                                                             </div>
-                                                            <div class="drug-reviews">
-                                                                <h3 class="english">Reviews</h3>
-                                                                <h3 class="arabic">تعليقات</h3>
-                                                                <p>"  Something bla bla "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                               <textarea placeholder="Write a review" rows="8" cols="50"></textarea>
-                                                                <input class="add-review" type="submit" value="Comment"> <!--- add Comment Button for all types --->
-                                                            </div>
+                                                           
                                                             <p class="quit"><a data-popup-close="popup-1" href="#">Close</a></p>
                                                             <div class="replacements">
                                                                 <div class="replace-drug">
@@ -222,7 +220,7 @@
                                                                             <h4>Replacement drug 1</h4>
                                                                             <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
                                                                         </div>
-                                                                        <button class="add-to-cart">Add cart</button>
+                                                                        <button class="add-to-cart2">Add cart</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="replace-drug">
@@ -237,7 +235,7 @@
                                                                             <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
                                                                             
                                                                         </div>
-                                                                        <button class="add-to-cart">Add cart</button>
+                                                                        <button class="add-to-cart2">Add cart</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="replace-drug">
@@ -251,7 +249,7 @@
                                                                             <h4>Replacement drug 1</h4>
                                                                             <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
                                                                         </div>
-                                                                        <button class="add-to-cart">Add cart</button>
+                                                                        <button class="add-to-cart2">Add cart</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -274,7 +272,7 @@
                                     <div class="overlay overlayFade">
                                         <p class="pop-link"><a class="drug-popup english" data-popup-open="popup-3" href="#">NAME</a></p>
                                         <p class="pop-link"><a class="drug-popup arabic" data-popup-open="popup-3" href="#" style="margin-left: 50px;">الاسم</a></p>
-                                        <p id="price">Price $</p>
+                                        
                                         
                                     </div>
                                 
@@ -295,22 +293,60 @@
                                                         </div>
                                                         <div class="drug-bottom">
                                                             <div class="grid-item4">
-                                                                <p class="english">Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
+                                                                <p class="english">Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam....</p>
+                                                                <a href="durg.html" class="more">Read More</a>
                                                                 <p class="arabic">بالعربي.</p>
                                                             </div>
                                                             <div class="grid-item5">
                                                                 <img src="imgs/product1.jpg">
                                                             </div>
-                                                            <div class="drug-reviews">
-                                                                <h3 class="english">Reviews</h3>
-                                                                <h3 class="arabic">تعليقات</h3>
-                                                                <p>"  Something bla bla "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <textarea placeholder="Write a review" rows="8" cols="50"></textarea>
-                                                                <input class="add-review" type="submit" value="Comment">
-                                                            </div>
+                                                           
                                                             <p class="quit"><a data-popup-close="popup-3" href="#">Close</a></p>
+                                                            <div class="replacements">
+                                                                <div class="replace-drug">
+                                                                    <div class="left-img">
+                                                                        <div class="img">
+                                                                            <img src="imgs/product1.jpg">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="right-title">
+                                                                        <div class="title-details">
+                                                                            <h4>Replacement drug 1</h4>
+                                                                            <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
+                                                                        </div>
+                                                                        <button class="add-to-cart2">Add cart</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="replace-drug">
+                                                                    <div class="left-img">
+                                                                        <div class="img">
+                                                                            <img src="imgs/product1.jpg">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="right-title">
+                                                                        <div class="title-details">
+                                                                            <h4>Replacement drug 1</h4>
+                                                                            <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
+                                                                            
+                                                                        </div>
+                                                                        <button class="add-to-cart2">Add cart</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="replace-drug">
+                                                                    <div class="left-img">
+                                                                        <div class="img">
+                                                                            <img src="imgs/product1.jpg">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="right-title">
+                                                                        <div class="title-details">
+                                                                            <h4>Replacement drug 1</h4>
+                                                                            <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
+                                                                        </div>
+                                                                        <button class="add-to-cart2">Add cart</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div> 
                                                     </div>
@@ -605,7 +641,7 @@
                         </div>
                             </div>
                             <div id="category-type2">
-                        <div class="type1 page hide" id="type2"  data-page="type2" >
+                        <div class="type1 page hide" id="type2">
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
@@ -636,15 +672,7 @@
                                                             <div class="grid-item5">
                                                                 <img src="imgs/product1.jpg">
                                                             </div>
-                                                            <div class="drug-reviews">
-                                                                <h3 class="english">Reviews</h3>
-                                                                <h3 class="arabic">تعليقات</h3>
-                                                                <p>"  Something bla bla "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <textarea placeholder="Write a review" rows="8" cols="50"></textarea>
-                                                                <input class="add-review" type="submit" value="Comment">
-                                                            </div>
+                                                            
                                                             <p class="quit"><a data-popup-close="popup-10" href="#">Close</a></p>
                                                         </div>
                                                     </div>
@@ -987,7 +1015,7 @@
                         </div>
                             </div>
                             <div id="category-type3">
-                        <div class="type1 page hide" id="type3"  data-page="type3" >
+                        <div class="type1 page hide" id="type3" >
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
@@ -1369,7 +1397,7 @@
                         </div>
                             </div>
                             <div id="category-type4">
-                        <div class="type1 page hide" id="type4"  data-page="type4" >
+                        <div class="type1 page hide" id="type4" >
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
@@ -1812,7 +1840,7 @@
                                         
                                     </div>
                                     
-                                        <input type="checkbox" name="mark2" value="cure1" onclick="runTotal2();" />
+                                       
                                     
                                     <div class="popup" data-popup="popup-34">
                                                 <div class="popup-inner2">
@@ -1827,21 +1855,14 @@
                                                         </div>
                                                         <div class="drug-bottom">
                                                             <div class="grid-item4">
-                                                                <p class="english">Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam. Nulla luctus luctus ipsum at ultricies. Nullam nec velit dui. Nullam sem eros, pulvinar sed pellentesque ac, feugiat et turpis. Donec gravida ipsum cursus massa malesuada tincidunt. Nullam finibus nunc mauris, quis semper neque ultrices in. Ut ac risus eget eros imperdiet posuere nec eu lectus.</p>
+                                                                <p class="english">Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum tincidunt neque id nisi pulvinar aliquam.</p>
+                                                                <a href="durg.html" class="more">Read More</a>
                                                                 <p class="arabic">بالعربي.</p>
                                                             </div>
                                                             <div class="grid-item5">
                                                                 <img src="imgs/product1.jpg">
                                                             </div>
-                                                            <div class="drug-reviews">
-                                                                <h3 class="english">Reviews</h3>
-                                                                <h3 class="arabic">تعليقات</h3>
-                                                                <p>"  Something bla bla "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <p>" Something bla bla  "</p>
-                                                                <textarea placeholder="Write a review" rows="8" cols="50"></textarea>
-                                                                <input class="add-review" type="submit" value="Comment">
-                                                            </div>
+                                                            
                                                             <p class="quit"><a data-popup-close="popup-34" href="#">Close</a></p>
                                                             <div class="replacements">
                                                                 <div class="replace-drug">
@@ -1855,7 +1876,7 @@
                                                                             <h4>Replacement drug 1</h4>
                                                                             <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
                                                                         </div>
-                                                                        <button class="add-to-cart">Add cart</button>
+                                                                        <button class="add-to-cart2">Add cart</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="replace-drug">
@@ -1870,7 +1891,7 @@
                                                                             <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
                                                                             
                                                                         </div>
-                                                                        <button class="add-to-cart">Add cart</button>
+                                                                        <button class="add-to-cart2">Add cart</button>
                                                                     </div>
                                                                 </div>
                                                                 <div class="replace-drug">
@@ -1884,7 +1905,7 @@
                                                                             <h4>Replacement drug 1</h4>
                                                                             <p>Donec in volutpat nisi. In quam lectus, aliquet rhoncus cursus a, congue et arcu. Vestibulum</p>
                                                                         </div>
-                                                                        <button class="add-to-cart">Add cart</button>
+                                                                        <button class="add-to-cart2">Add cart</button>
                                                                     </div>
                                                                 </div>
                                                             </div>
