@@ -25,10 +25,10 @@ $(document).ready(function() {
             /*-------------------------------- categories showing --------------------------------*/
             $("#menu2 li a").on('click', function(e) {
                         e.preventDefault();
-                        var page = $(this).data('page');
+                         var page = $(this).attr("id");
                         $("#pages2 .page2:not('.hide')").stop().fadeOut('fast', function() {
                             $(this).addClass('hide');
-                            $('#pages2 .page2[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+                            $('#pages2 .page2[id="'+page+'"]').fadeIn('slow').removeClass('hide');
                         });
                     });
             /*-------------------------------- navbar ---------------------------------------------*/
