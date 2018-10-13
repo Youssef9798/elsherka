@@ -13,7 +13,7 @@ $(document).ready(function() {
 					e.preventDefault();
 					$('body,html').animate({ scrollTop: $(this.hash).offset().top }, 1500);
 				} );
-    
+    /*-------------------------------- categories showing --------------------------------*/
             $("#menu li a").on('click', function(e) {
                 e.preventDefault();
                 var page = $(this).attr("id");
@@ -26,9 +26,20 @@ $(document).ready(function() {
             $("#menu2 li a").on('click', function(e) {
                         e.preventDefault();
                          var page = $(this).attr("id");
+                
                         $("#pages2 .page2:not('.hide')").stop().fadeOut('fast', function() {
                             $(this).addClass('hide');
                             $('#pages2 .page2[id="'+page+'"]').fadeIn('slow').removeClass('hide');
+                        });
+                    });
+            /*--------------------------------- Login - Register ----------------------------------*/
+            $("#menu3 li a").on('click', function(e) {
+                        e.preventDefault();
+                         var page = $(this).attr("id");
+                
+                        $("#pages3 .page3:not('.hide')").stop().fadeOut('fast', function() {
+                            $(this).addClass('hide');
+                            $('#pages3 .page3[id="'+page+'"]').fadeIn('slow').removeClass('hide');
                         });
                     });
             /*-------------------------------- navbar ---------------------------------------------*/
