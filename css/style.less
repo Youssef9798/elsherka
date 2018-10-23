@@ -343,6 +343,7 @@ body{
     .home{
         background: url(../imgs/bck1.jpg) 100%  fixed no-repeat;
         height: 662px;
+        background-size: cover;
     }
     header{
         width: 100%;
@@ -595,50 +596,61 @@ body{
         width: 100%;
         float: left;
         margin: 120px 0 15px 0;
-        h1{
+        .title-left{
             float: left;
-            font-family: phar1;
-            color: @font2;
-            &::after{
-                content: '';
-                display: block;
-                width: 120px;
-                height: 3px;
-                background: @font2;
-                margin: 5px 0 0 0;
-            }
+            width: 20%;
+           
+            h1{
+                float: left;
+                font-family: phar1;
+                color: @font2;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 120px;
+                    height: 3px;
+                    background: @font2;
+                    margin: 5px 0 0 0;
+                    }
+                }
         }
-        ul{
-            list-style: none;
-            float: right;
+        .menu-right{
+            float: left;
+            width: 80%;
+            ul{
+                list-style: none;
+                float: right;
 
-            .english.active3{
-                display: none;
-            }
-            .arabic.active3{
-                display: inline;
-            }
-            .arabic{
-                display: none;
-            }
-            li{
-                display: inline;
-                margin: 0 5px;
-                a{
-                    text-decoration: none;
-                    font-family: phar1;
-                    font-size: 17px;
-                    color: @font1;
-                    padding: 5px;
-                    &:hover{
-                        background: @font5;
-                        color: @font2;
+                .english.active3{
+                    display: none;
+                }
+                .arabic.active3{
+                    display: inline;
+                }
+                .arabic{
+                    display: none;
+                }
+                li{
+                    display: inline;
+                    margin: 0 5px;
+                    
+                    a{
+                        text-decoration: none;
+                        font-family: phar1;
+                        font-size: 17px;
+                        color: @font1;
                         padding: 5px;
-                        border-radius: 6px;
+                        &:hover{
+                            background: @font5;
+                            color: @font2;
+                            padding: 5px;
+                            border-radius: 6px;
+                        }
                     }
                 }
             }
         }
+        
                 .cart{
                     text-decoration: none;
                     color: #ffffff;
@@ -960,6 +972,7 @@ body{
                             p{
                                 font-family: phar1;
                                 color: @font5;
+                                word-break: break-all;
                             }
                         }
                         .add-to-cart2{
@@ -1035,45 +1048,55 @@ body{
         width: 100%;
         float: left;
         margin: 120px 0 15px 0;
-        h1{
+        .title-left{
             float: left;
-            font-family: phar1;
-            color: @font2;
-            &::after{
-                content: '';
-                display: block;
-                width: 65px;
-                height: 3px;
-                background: @font2;
-                margin: 5px 0 0 0;
-            }
+            width: 20%;
+           
+            h1{
+                float: left;
+                font-family: phar1;
+                color: @font2;
+                &::after{
+                    content: '';
+                    display: block;
+                    width: 120px;
+                    height: 3px;
+                    background: @font2;
+                    margin: 5px 0 0 0;
+                    }
+                }
         }
-        ul{
-            list-style: none;
-            float: right;
-            .english.active3{
-                display: none;
-            }
-            .arabic.active3{
-                display: inline;
-            }
-            .arabic{
-                display: none;
-            }
-            li{
-                display: inline;
-                margin: 0 5px;
-                a{
-                    text-decoration: none;
-                    font-family: phar1;
-                    font-size: 17px;
-                    color: @font1;
-                    padding: 5px;
-                    &:hover{
-                        background: @font5;
-                        color: @font2;
+        .menu-right{
+            float: left;
+            width: 80%;
+            ul{
+                list-style: none;
+                float: right;
+
+                .english.active3{
+                    display: none;
+                }
+                .arabic.active3{
+                    display: inline;
+                }
+                .arabic{
+                    display: none;
+                }
+                li{
+                    display: inline;
+                    margin: 0 5px;
+                    a{
+                        text-decoration: none;
+                        font-family: phar1;
+                        font-size: 17px;
+                        color: @font1;
                         padding: 5px;
-                        border-radius: 6px;
+                        &:hover{
+                            background: @font5;
+                            color: @font2;
+                            padding: 5px;
+                            border-radius: 6px;
+                        }
                     }
                 }
             }
@@ -1505,6 +1528,13 @@ body{
                     color: #ffffff;
                     font-family: phar1;
                     margin: -25px 35px 0 0;
+                }
+                h5{
+                    float: right;
+                    color: #ffffff;
+                    font-family: phar1;
+                    text-decoration: line-through;
+                    margin: 5px -60px 0 0;
                 }
                 h4{
                     color: #ffde2a;
@@ -2304,6 +2334,7 @@ body{
             margin: auto;
             top: 68%;
             left: 50%;
+            overflow-x: hidden;
             transform: translate(-50%,80%);
             box-shadow: 4px 4px 6px rgba(0,0,0,.5);
             border-radius: 6px;
@@ -2488,6 +2519,7 @@ body{
 
     }
     .replacements{
+        overflow-x: hidden;
                     .replace-drug{
                         width: 95%;
                         float: left;
@@ -2526,6 +2558,7 @@ body{
                                 padding: 10px 0;
                             }
                             p{
+                                word-break: break-all;
                                 font-family: phar1;
                                 color: @font5;
                             }

@@ -40,9 +40,7 @@
             </div>
             
             <button class="openBtn" onclick="openSearch()"><a class="fa fa-search" style="margin-right: 5px;"></a>Search</button>
-            <div class="log">
-                <a href="login.html">Sign Up or Sign In</a>            
-            </div>
+         
 
             <script>
                 
@@ -92,7 +90,7 @@
                                     <li class="english"><a href="#cosmetics" class="scroll nav-link">Cosmetics</a></li>
                                     <li class="arabic"><a href="#cosmetics" class="scroll">مستحضرات التجميل</a></li>
                                     <li class="english"><a href="#contact" class="scroll nav-link">Contact</a></li>
-                                    <li class="english"><a href="cart.html" class=" nav-link"><i class="fas fa-shopping-bag"></i> Cart</a> </li>
+                                    
                                     <li class="arabic"><a href="#contact" class="scroll">تواصل</a></li>
                                 </ul>
                                 
@@ -148,11 +146,14 @@
             <div class="drugs" id="pages">
                 <div class="grid">
                     <div class="container">
-                        <form name="f1" method="post" >
+                        <span >
                         <div class="head">
-                            <h1 class="english">Drugs &amp; Medicines</h1>
+                            <div class="title-left">
+                                <h1 class="english">Drugs &amp; Medicines</h1>
                             <h1 class="arabic">الادوية  &amp; المسكنات</h1>
-                            <ul id="menu">
+                            </div>
+                            <div class="menu-right">
+                                <ul id="menu">
                                 
                                 <li class="english"><a id="type1" href="#">Type 1</a></li>
                                 <li class="arabic"><a id="type1" href="#">النوع 1</a></li>
@@ -165,10 +166,15 @@
                                 <li class="arabic"><a id="type3" href="#">النوع 3</a></li>
                                 
                                 <li class="english"><a id="type4" href="#">Type 4</a></li>
+                                <li class="english"><a id="type0" href="#">Type 5</a></li>
+                                <li class="english"><a id="type00" href="#">Type 6</a></li>
+                                <li class="english"><a id="type000" href="#">Type 7</a></li>
+                                <li class="english"><a id="type0000" href="#">Type 8</a></li>
                                 <li class="arabic"><a id="type4" href="#">النوع 4</a></li>
                                 
-                          <a href="cart.html" class=" cart fas fa-cart-plus" ></a> <!-- Cart link and must put it in cosmetics too ---> 
-                            </ul>
+                          
+                                </ul>
+                            </div>
                                 
                             </div>
                             
@@ -362,13 +368,17 @@
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
+                                    <div class="add-to-cart">
+                                            <p id="price">20.00$</p>
+                                            <button class="carting">Add to cart</button>
+                                    </div>
                                     <div class="overlay overlayFade">
                                         <p class="pop-link"><a class="drug-popup english" data-popup-open="popup-4" href="#">NAME</a></p>
                                         <p class="pop-link"><a class="drug-popup arabic" data-popup-open="popup-4" href="#" style="margin-left: 50px;">الاسم</a></p>
-                                        <p id="price">Price $</p>
+                                        
                                     </div>
                                    
-                                        <input type="checkbox" name="mark" value="cure1" onclick="runTotal();" />
+                                      
                                     
                                      
                                             <div class="popup" data-popup="popup-4">
@@ -410,13 +420,17 @@
                             <div class="grid-item">
                                 <div class="content">
                                     <img src="imgs/product1.jpg">
+                                    <div class="add-to-cart">
+                                            <p id="price">20.00$</p>
+                                            <button class="carting">Add to cart</button>
+                                    </div>
                                     <div class="overlay overlayFade">
                                         <p class="pop-link"><a class="drug-popup english" data-popup-open="popup-5" href="#">NAME</a></p>
                                         <p class="pop-link"><a class="drug-popup arabic" data-popup-open="popup-5" href="#" style="margin-left: 50px;">الاسم</a></p>
-                                        <p id="price">Price $</p>
+                                        
                                     </div>
                                        
-                                            <input type="checkbox" name="mark" value="cure1" onclick="runTotal();" />
+                                            
                                         
                                      
                                             <div class="popup" data-popup="popup-5">
@@ -1786,7 +1800,7 @@
                             </div>
                                 </div>
                         </div>
-                            </form>
+                            </span>
                     </div>
                 </div>
             </div>
@@ -1809,11 +1823,15 @@
             <div class="cosmetics" id="pages2">
                 <div class="grid">
                     <div class="container">
-                         <form name="f2" method="post" >
+                         <span>
                         <div class="head">
-                            <h1 class="english">Cosmetics</h1>
-                            <h1 class="arabic">مستحضرات التجميل</h1>
-                            <ul id="menu2">
+                            <div class="title-left">
+                                <h1 class="english">Cosmetics</h1>
+                                <h1 class="arabic">مستحضرات التجميل</h1>
+                            </div>
+                            
+                            <div class="menu-right">
+                                 <ul id="menu2">
                                 <li class="english"><a id="type5" href="#">Type 1</a></li>
                                 <li class="arabic"><a id="type5" href="#">النوع 1</a></li>
                                 
@@ -1826,11 +1844,12 @@
                                 <li class="english"><a id="type8" href="#">Type 4</a></li>
                                 <li class="arabic"><a id="type8" href="#">النوع 4</a></li>
                                 
-                            <a href="cart.html" class=" cart fas fa-cart-plus"></a> <!-- Popup cart link -->
+                          
                                 
-                            </ul>
-                                
+                                </ul>
                             </div>
+                                
+                        </div>
                     
                              <div id="category-type5">
                         <div class="type1 page2 " id="type5" >
@@ -1858,6 +1877,7 @@
                                                             <h2 class="arabic">اسم الدواء</h2>
                                                             <a class="popup-close" data-popup-close="popup-34" href="#">x</a>
                                                             <h1>20.00$</h1>
+                                                            <h5>40.00$</h5>
                                                             <h4>Ratings</h4>
                                                             
                                                         </div>
@@ -3400,7 +3420,7 @@
                             </div>
                                  </div> 
                              </div>
-                            </form>
+                            </span>
                         
                     </div>
                 </div>
