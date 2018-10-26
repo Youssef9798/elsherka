@@ -340,25 +340,22 @@
         }
     }
     #app-links{
-        .grid-item2{
-            display: none;
-            width: 100% !important;
-        }
-        .grid-item3{
-            width: 90% !important;
-        }
-        .bckg{
-            height: 800px !important;
-        }
         .apps-title{
             .right-side{
                 .latest{
-                    margin: 10% 0 0 20% !important;
                     img{
-                        margin: 10% 0 10% -20% !important;
-                        width: 50% !important;
+                        margin: 10% 0 10% -50%;
+                        width: 80%;
                     }
-
+                    .text{
+                        margin: 5% 0 5% 10%;
+                        h1{
+                            font-size: 25px;
+                        }
+                        p{
+                            font-size: 85%;
+                        }
+                    }
                 }
             }
         }
@@ -513,9 +510,7 @@
         }
     }
     #cart-basket{
-        .cart-header{
-            height: 100px !important;
-        }
+
         .popup-inner-cart{
             transform: translate(-50%,-45%);
             .cart-colums{
@@ -569,9 +564,6 @@
         }
     }
     #drug-page{
-        .drug-header{
-            height: 120px;
-        }
         .drug-buttom{
             .left{
                 .description{
@@ -608,7 +600,6 @@
                     }
                 }
     }
-    
 }
 
 /*------------------------- 700px -------------------*/
@@ -653,25 +644,30 @@
     }
     }
     #app-links{
-        .grid-item2{
-            width: 100% !important;
-        }
-        .grid-item3{
-            width: 90% !important;
-        }
-        .bckg{
-            height: 800px !important;
-        }
         .apps-title{
-            .right-side{
-                .latest{
-                    margin: 10% 0 0 20% !important;
-                    img{
-                        margin: 10% 0 10% -20% !important;
-                        width: 50% !important;
-                    }
+            .latest{
+                margin: 6% 5% !important;
+                img{
 
                 }
+                p{
+                    font-size: 80% !important;
+                    margin: 0 !important;
+                }
+            }
+        }
+        .left-side{
+            h2{
+                font-size: 200% !important;
+                margin: 5% 0 0 5% !important;
+            }
+            p{
+                font-size: 120% !important;
+                width: 55%;
+                margin: 5% 0 6% 6% !important;
+            }
+            .android{
+                margin: 0 0 0 6% !important;
             }
         }
     }
@@ -895,24 +891,41 @@
             height: 750px;
         }
         .grid-item2{
-            width: 100% !important;
+            width: 55%;
         }
-        .grid-item3{
-            width: 90% !important;
-        }
-        .bckg{
-            height: 800px !important;
+        grid-item3{
+            width: 45%;
         }
         .apps-title{
-            .right-side{
-                .latest{
-                    margin: 10% 0 0 20% !important;
-                    img{
-                        margin: 10% 0 10% -20% !important;
-                        width: 50% !important;
-                    }
-
+            .latest{
+                margin: 6% 8% !important;
+                img{
+                    width: 200px !important;
+                    margin-left: 0px !important;
+                    margin-right: 0px !important;
                 }
+                h1{
+                    font-size: 130% !important;
+                }
+                p{
+                    font-size: 80% !important;
+                    margin: 0 !important;
+                    width: 150px;
+                }
+            }
+        }
+        .left-side{
+            h2{
+                font-size: 200% !important;
+                margin: 5% 0 0 5% !important;
+            }
+            p{
+                font-size: 120% !important;
+                width: 55%;
+                margin: 5% 0 6% 6% !important;
+            }
+            .android{
+                margin: 0 0 0 6% !important;
             }
         }
     }
@@ -1610,6 +1623,7 @@
     }
     #home{
         .home{
+            
             height: 550px;
         }
         header{
@@ -1943,6 +1957,20 @@
 /*======================================= 425px ==========================*/
 
 @media only screen and (max-width: 425px ){
+    #home{
+        .home{
+            background: url(../imgs/bck1%20400px.jpg) 100%  fixed no-repeat;
+            background-size: cover;
+        }
+    }
+    #caption{
+    .bck{
+        background: url(../imgs/bck2%20400px.png) 100% no-repeat fixed;
+        width: 100%;
+        
+        background-size: cover;
+    }
+    }
     #cart-basket{
         .bcker{
             height: 1200px;
@@ -2276,7 +2304,13 @@
             width: 60px;
         }
     }
-    #home{
+        #home{
+            
+        .home{
+            background: url(../imgs/bck1%20375px.jpg) 100%  fixed no-repeat;
+            background-size: cover;
+        }
+      
         .navbar.active2{
             top: 2px;
         }
@@ -2284,6 +2318,14 @@
             h1{
                 padding-top: 250px !important;
             }
+        }
+    }
+        #caption{
+            .bck{
+            background: url(../imgs/bck2%20375px.png)  no-repeat fixed;
+            width: 100%;
+
+            background-size: cover;
         }
     }
     #drugs{
