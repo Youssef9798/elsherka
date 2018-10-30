@@ -177,29 +177,49 @@
         max-height: 450px;
         transform: translate(-50%,-45%);
             .cart-colums{
+                label{
+                    font-size: 14px;
+                }
                 label.product-price{
-                    width: 15% !important;
+                    width: 10% !important;
                 }
                 label.product-removal{
-                    width: 15% !important;
+                    width: 10% !important;
                 }
             }
             .product{
-
-                .product-price{
-                    width: 15% !important;
+                .product-title{
+                    h3{
+                        font-size: 16px;
+                    }
                     p{
-                        margin: 20% 0 !important;
+                        font-size: 11.5px !important;
+                    }
+                }
+                .product-price{
+                    width: 10% !important;
+                    p{
+                        font-size: 14px;
+                        margin: 33% 0 !important;
                     }
                     span{
+                        display: none;
                         margin: 20% 0 !important;
                         margin-left: 15px !important;
                     }
                 }
+                .product-total{
+                    font-size: 14px;
+                    p{
+                        margin: 33% 0 !important;
+                    }
+                }
                 .product-removal{
-                    width: 15% !important;
+                    width: 10% !important;
                     .product-remove{
-                        margin: 18% 15px !important;
+                        margin: 25% 15px !important;
+                        width: 70px;
+                        text-align: center;
                     }
                 }
             }
@@ -239,6 +259,100 @@
                     img{
                         max-width: 180px;
                         max-height: 180px;
+                    }
+                }
+            }
+        }
+    }
+     #cart-basket{
+        .popup-inner-cart{
+            .cart-colums{
+                display: none;
+            }
+            .product{
+                .left-col{
+                    float: left;
+                    width: 45%;
+                    height: 250px;
+                    .product-img{
+                        width: 45% !important;
+                    }
+                }
+                .right-col{
+                    width: 55%;
+                    float: left;
+                    height: auto;
+                    .product-title{
+                        width: 100% !important;
+                       
+                    }
+                    .product-quantity{
+                            border-top: 1px solid grey;
+                            margin: 10px 0;
+                            width: 100% !important;
+                            &:before{
+                                margin: 2% 2px !important;
+                                content: 'Qty' !important;
+                                font-family: phar1;
+                            }
+                            input{
+                                margin: 2% 5px !important;
+                            }
+                            span{
+                                display: none;
+                            }
+                    }
+                    .product-price{
+                            width: 100% !important;
+                        &:nth-child(3){
+                            &:before{
+                                float: left;
+                                content: 'After Price :' !important;
+                                font-family: phar1;
+                                margin: 2% 5px !important;
+                            }
+                        }
+                          &:nth-child(4){
+                            &:before{
+                                float: left;
+                                content: 'Before Price :' !important;
+                                font-family: phar1;
+                                margin: 2% 5px !important;
+                            }
+                        }
+                          &:nth-child(5){
+                            &:before{
+                                float: left;
+                                content: 'You Saved :' !important;
+                                font-family: phar1;
+                                margin: 2% 5px !important;
+                            }
+                        }
+                            p{
+                                margin: 2% 5px !important;
+                            }
+                            span{
+                                display: none;
+                            }
+                    }
+                    .product-total{
+                            width: 100% !important;
+                            &:before{
+                                float: left;
+                                content: 'Total :' !important;
+                                font-family: phar1;
+                                margin: 2% 5px !important;
+                            }
+                            p{
+                                margin: 2% 0px !important;
+                            }
+                    }
+                    .product-removal{
+                            width: 100% !important;
+                            .product-remove{
+                                float: right;
+                                margin: 5% 25px !important;
+                            }
                     }
                 }
             }
