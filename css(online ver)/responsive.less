@@ -438,7 +438,12 @@
                     li{
                         margin: 0 !important;
                         a{
-                            font-size: 15px;
+                            font-size: 15px!important;
+                        }
+                    }
+                    .arabic{
+                        a{
+                            font-size: 10px !important;
                         }
                     }
                 }
@@ -732,6 +737,11 @@
                     }
                 }
     }
+    #manual-order{
+        .bcker{
+            height: 800px;
+        }
+    }
 }
 
 /*------------------------- 700px -------------------*/
@@ -980,12 +990,17 @@
         .head{
             .title-left{
                 width: 100% !important;
-                 margin: 25px 0;
+                 margin: 40px 0;
             }
             .menu-right{
                 width: 100% !important;
+                margin-top: 120px;
                 ul{
                     float: left !important;
+                    li{
+                        margin-top: 20px !important;
+                        line-height: 45px;
+                    }
                 }
             }
         }
@@ -1052,14 +1067,19 @@
     }
     #cosmetics{
        .head{
-            .title-left{
+           .title-left{
                 width: 100% !important;
-                 margin: 25px 0;
+                 margin: 40px 0;
             }
             .menu-right{
                 width: 100% !important;
+                margin-top: 120px;
                 ul{
                     float: left !important;
+                    li{
+                        margin-top: 20px !important;
+                        line-height: 45px;
+                    }
                 }
             }
         }
@@ -1121,6 +1141,11 @@
             }
         }
     }
+    #manual-order{
+        .outter-order{
+            max-width: 500px;
+        }
+    }
 }
 
 /*---------------------------- 600px ---------------------*/
@@ -1156,12 +1181,12 @@
                 font-size: 25px;
                 margin: 4% 0;
             }
-            .navbar{
+            .navbar.active2{
                 display: none;
             }
-            .navbar.active2{
+            .navbar{
                 transition: 1s;
-                width: 600px !important;
+                width: 615px !important;
                 position: relative;
                 left: -110px;
                 display: block;
@@ -1171,6 +1196,9 @@
                     margin: 0 !important;
                     .arabic{
                         display: none;
+                         a{
+                            font-size: 13px !important;
+                        }
                     }
                     .arabic.active3{
                         display: block;
@@ -1202,8 +1230,8 @@
                     width: 350px;
                     letter-spacing: 1px;
                     text-align: center;
-                    font-size: 25px !important;
-                    padding-top: 250px !important;
+                    font-size: 30px !important;
+                    padding-top: 350px !important;
                 }
             }
         }
@@ -1215,7 +1243,7 @@
             width: 100% !important;
         }
         .bckg{
-            height: 800px !important;
+            height: 500px !important;
         }
         .apps-title{
             .right-side{
@@ -1480,6 +1508,11 @@
             }
         }
     }
+    #manual-order{
+        .outter-order{
+            max-width: 400px;
+        }
+    }
 }
 
 /*----------------------------- 500px ---------------*/
@@ -1509,7 +1542,7 @@
     }
     #home{
     .home{
-        background: url(../imgs/back1.jpg) 100%  fixed no-repeat;
+        background: url(../imgs/bck1%20500px.jpg) 100%  fixed no-repeat;
         background-size: cover;
     }
     }
@@ -1762,10 +1795,10 @@
                 font-size: 25px;
                 margin: 4% 0;
             }
-            .navbar{
+            .navbar.active2{
                 display: none;
             }
-            .navbar.active2{
+            .navbar{
                 transition: 1s;
                 width: 450px !important;
                 position: relative;
@@ -2079,7 +2112,20 @@
                         }
                     }
     }
-
+    #manual-order{
+        .outter-order{
+            max-width: 350px;
+        }
+        .inner-order{
+            .header{
+                .right{
+                    h1{
+                        margin-left: -10px !important;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*======================================= 425px ==========================*/
@@ -2191,7 +2237,7 @@
 
 @media only screen and (max-width: 400px ) {
     .grid{
-        width: 350px;
+        width: 92%;
         margin: auto;
     }
     .grid-item{
@@ -2220,8 +2266,8 @@
     #home{
         .welcome{
             h1{
-                font-size: 28px !important;
-                padding: 150px 0 0 0 !important;
+                font-size: 30px !important;
+                padding: 350px 0 0 0 !important;
             }
         }
     }
@@ -2370,13 +2416,18 @@
         }
 
     }
+    #manual-order{
+        .outter-order{
+            max-width: 290px;
+        }
+    }
 }
 
 /*-------------------------- 380px -------------------*/
 
 @media only screen and (max-width: 380px ) {
     .grid{
-        width: 330px;
+        width: 92%;
     }
     .grid-item{
         margin: 20px 7.5px;
@@ -2397,11 +2448,16 @@
     }
     #home{
         .navbar.active2{
-            top: 2px;
+            top: 5px !important;
+        }
+        header{
+            .navbar{
+                width: (380px*1.15) !important;
+            }
         }
         .welcome{
             h1{
-                padding-top: 250px !important;
+                padding-top: 350px !important;
             }
         }
     }
@@ -2486,7 +2542,7 @@
 
 @media only screen and (max-width: 350px ) {
     .grid{
-        width: 320px;
+        width: 92%;
     }
     .grid-item{
         width: 46%;
@@ -2513,15 +2569,16 @@
         .welcome{
             h1{
                 width: 300px;
-                padding-top: 250px !important;
+                padding-top: 350px !important;
             }
         }
-        .navbar.active2{
+        header{
+            .navbar{
                 transition: 1s;
-                width: 350px !important;
+                width: 135% !important;
                 position: relative;
-                left: -55px !important;
-                top: 4px;
+               
+                top: 5px;
                 display: block;
                 ul{
                     width: 450px !important;
@@ -2540,6 +2597,7 @@
                 }
                 }
             }
+        }
     }
      #app-links{
         .apps-title{
@@ -2756,8 +2814,8 @@
         }
     #home{
         header{
-            top: 9%;
-            .navbar.active2{
+            top: 8%;
+            .navbar{
                 transition: 1s;
                 width: 320px !important;
                 position: relative;
